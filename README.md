@@ -1,4 +1,4 @@
-# Awesome Name [![Awesome Lists](https://srv-cdn.himpfen.io/badges/awesome-lists/awesomelists-flat.svg)](https://github.com/brandonhimpfen/awesome-lists)
+# Awesome Student Analytics [![Awesome Lists](https://srv-cdn.himpfen.io/badges/awesome-lists/awesomelists-flat.svg)](https://github.com/brandonhimpfen/awesome-lists)
 
 [![Support Open Work](https://img.shields.io/badge/Support-Open%20Work-0A0A0A?style=flat&logo=github)](https://github.com/brandonhimpfen/support) 
 [![GitHub Sponsor](https://srv-cdn.himpfen.io/badges/github/github-flat.svg)](https://github.com/sponsors/brandonhimpfen) 
@@ -8,38 +8,66 @@
 [![X](https://srv-cdn.himpfen.io/badges/twitter/twitter-flat.svg)](https://x.com/ListsAwesome) 
 [![Facebook](https://srv-cdn.himpfen.io/badges/facebook-pages/facebook-pages-flat.svg)](https://www.facebook.com/awesomelists)
 
-📌 This repository is archived with Zenodo and can be cited using the DOI above.
+> A curated list of resources for student analytics, learning analytics frameworks, educational data mining, early warning systems, and predictive student modeling.
 
-> A curated list of resources for
-
-Statement about the importance of the topic. Statement about who the list is intended for.
+Student analytics leverages educational data mining, clickstream tracking, predictive modeling, and learning analytics to understand learner behavior, identify at-risk students, and optimize educational outcomes. This list is intended for educational data scientists, institutional researchers, edtech developers, and academic administrators.
 
 _Support ongoing maintenance and curation via [GitHub Sponsors](https://github.com/sponsors/brandonhimpfen)._
 
 ## Contents
 
-- [Section](#section)
-- [Another Section](#another-section)
+- [Learning Analytics Frameworks](#learning-analytics-frameworks)
+- [Educational Data Mining & Modeling](#educational-data-mining--modeling)
+- [Early Warning & Retention Systems](#early-warning--retention-systems)
+- [Data Standards & Telemetry](#data-standards--telemetry)
+  - [xAPI & Caliper Standards](#xapi--caliper-standards)
+  - [LMS Data Extractors](#lms-data-extractors)
+- [Related Awesome Lists](#related-awesome-lists)
 
-## Section
+## Learning Analytics Frameworks
 
-About this section. Keep this short and focused on what the resources represent.
+Open-source engines, processing pipelines, and analytical platforms designed to aggregate and measure student engagement.
 
-- [Example Project One](https://example.com/project-one) — Short, neutral description of what this resource does.
-- [Example Project Two](https://example.com/project-two) — Short, neutral description of what this resource does.
+- [Open Learning Analytics Platform (OpenLAP)](https://github.com/rwth-acis/OpenLAP) — Modular framework for building customizable learning analytics indicators and visualization dashboards.
+- [LAK-Data Pipeline](https://github.com/solaresearch) — Standardized dataset processing pipelines built by the Society for Learning Analytics Research (SoLAR).
+- [Moodle Learning Analytics Engine](https://github.com/moodle/moodle) — Built-in machine learning infrastructure within Moodle for predicting student completion and engagement risks.
+- [Open-LMS-Analytics](https://github.com/openedx/aspects) — Aspects analytics platform for Open edX powered by ClickHouse and Superset for real-time learner insight generation.
 
-## Another Section
+## Educational Data Mining & Modeling
 
-### Subsection
+Algorithms, statistical packages, and specialized machine learning models for analyzing student learning patterns.
 
-- [Example Tool One](https://example.com/tool-one) — Short, neutral description of what this resource does.
-- [Example Tool Two](https://example.com/tool-two) — Short, neutral description of what this resource does.
+- [pyBKT](https://github.com/CAI-BKT/pyBKT) — Python library implementing Bayesian Knowledge Tracing to continuously estimate student skill mastery.
+- [EDM-Metrics](https://github.com/educational-data-mining) — Evaluation metrics and statistical utilities optimized for educational benchmark datasets.
+- [Performance-Prediction-Models](https://github.com/riiid/ednet) — Machine learning repository for forecasting student assessment scores and dropout likelihood from interaction logs.
+
+## Early Warning & Retention Systems
+
+Open frameworks and algorithmic engines for flagging at-risk students and automating intervention workflows.
+
+- [Student Early Warning System (SEWS)](https://github.com/unicon) — Open-source integration architecture for building proactive academic intervention pipelines.
+- [Degree Compass Engine](https://github.com/desire2learn) — Predictive recommendation engine principles for guiding students toward optimal course pathways based on historic performance data.
+
+## Data Standards & Telemetry
+
+Protocols, schemas, and specifications for capturing learning events and standardizing educational telemetry across systems.
+
+### xAPI & Caliper Standards
+
+- [Learning Locker LRS](https://github.com/LearningLocker/learninglocker) — Open-source Learning Record Store (LRS) for collecting, storing, and analyzing xAPI (Experience API) learning statements.
+- [1EdTech Caliper Analytics Implementation](https://github.com/1EdTech) — Reference implementations and libraries for capturing standard edtech event metrics.
+
+### LMS Data Extractors
+
+- [Canvas Data Pipeline](https://github.com/instructure/canvas-data-cli) — Command-line interface and ETL tools for extracting high-volume clickstream and course logs from Canvas LMS.
 
 ## Related Awesome Lists
 
-- [Awesome Example One](https://example.com/awesome-one) — Short, neutral description of the related list.
-- [Awesome Example Two](https://example.com/awesome-two) — Short, neutral description of the related list.
-  
+- [Awesome AI in Education](https://github.com/brandonhimpfen/awesome-ai-in-education) — Intelligent tutoring systems, adaptive learning, and pedagogical AI models.
+- [Awesome Online Course Platforms](https://github.com/brandonhimpfen/awesome-online-course-platforms) — Learning management systems, MOOC engines, and digital academies.
+- [Awesome Educational Content Creation](https://github.com/brandonhimpfen/awesome-educational-content-creation) — Interactive assessment engines, course design, and instructional tools.
+- [Awesome Open Education Resources](https://github.com/brandonhimpfen/awesome-open-education-resources) — Open textbooks, free courseware, and educational search engines.
+
 ## Contribute
 
 Contributions are welcome. Please ensure your submission fully follows the requirements outlined in [`CONTRIBUTING.md`](CONTRIBUTING.md), including formatting, scope alignment, and category placement.
@@ -49,14 +77,3 @@ Pull requests that do not adhere to the contribution guidelines may be closed.
 ## License
 
 [![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg)](http://creativecommons.org/licenses/by-sa/4.0/)
-
-## Maintenance
-
-This template includes GitHub Actions workflows for automated link checking:
-
-- **Links (PR)** checks Markdown links on pull requests.
-- **Links (Scheduled → Issue)** runs weekly and opens or updates an issue if it finds broken links.
-
-You can tune link checking behavior in `lychee.toml`.
-
-Automated checks: link checking (PR + weekly), duplicate URL detection, and a lightweight Awesome List lint.
